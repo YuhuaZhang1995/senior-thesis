@@ -8,5 +8,5 @@ gfortran -c MVNDST_.f
 g++ - Wall -I/path to your gsl include/ -c MVN.cpp MCMC.cpp prior.cpp standard.cpp Mstep.cpp header.h
 ar rcs lib.a MVN.o MVNDST_.o MCMC.o prior.o standard.o Mstep.o header.h.gch
 g++ -c standard_main.cpp
-g++ -L/path to your gsl lib/ -o pleasework standard_main.cpp lib.a
+g++ -L/path to your gsl lib/ -o pleasework standard_main.o lib.a
 ./pleasework [LD file] [zscore] [annotation(binary)] [estimated gamma] [output]
